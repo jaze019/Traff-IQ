@@ -35,29 +35,18 @@ Follow these steps to get Traff-IQ running on your local machine.
 ### Prerequisites
 This application is designed for Linux-based systems. You will need Python 3 and your system's package manager (apt, dnf, etc.).
 
-### 1. Clone the Repository
-Bash
-
-# git clone https://github.com/your-username/Traff-IQ.git
-# cd Traff-IQ
-### 2. Install System Dependencies
+### 1. Install System Dependencies
 Tkinter is a system-level dependency required for the GUI.
 
-For Debian/Ubuntu-based systems:
-
-Bash
-
+#For Debian/Ubuntu-based systems:
 sudo apt-get update
 sudo apt-get install python3-tk
-For Fedora/CentOS-based systems:
 
-Bash
-
+#For Fedora/CentOS-based systems:
 sudo dnf install python3-tkinter
-### 3. Set up the Python Environment
-It's highly recommended to use a virtual environment.
 
-Bash
+### 2. Set up the Python Environment
+It's highly recommended to use a virtual environment.
 
 # Create and activate the virtual environment
 python3 -m venv venv
@@ -84,9 +73,8 @@ abuseipdb_api_key: This is crucial. Sign up for a free account at AbuseIPDB to g
 ## Usage
 Because packet sniffing requires elevated privileges, you must run the application with sudo, making sure to use the Python executable from within your virtual environment.
 
-Bash
-
 sudo ./venv/bin/python3 app.py
+
 Once the application window appears, click "Start Monitoring" to begin sniffing. Alerts will appear in the text box in real-time.
 
 ## How It Works
